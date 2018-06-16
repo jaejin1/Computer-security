@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://rawgit.com/leizongmin/js-xss/master/dist/xss.js"></script>
+
+    <script>
+      function replaceAll(str, searchStr, replaceStr) {
+        return str.split(searchStr).join(replaceStr);
+      }
+
+    </script>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <table border="2">
+      <tr>
+        <th>번호</th>
+        <th>제목</th>
+        <th>글쓴이</th>
+        <th>조회수</th>
+        <th>수정일</th>
+        <th> </th>
+      </tr>
+      <%
+      for(var i = 0; i<rows.length; i++)
+      {
+      %>
+      <tr>
+        <script>
+
+          title = "<%= rows[i].title %>";
+          result = replaceAll(title,"&lt;", "<");
+          result = replaceAll(result,"&gt;", ">");
+          result = replaceAll(result,"&#39;", "'");
+          result = replaceAll(result,"&#34;", '"');
+
+          writer = "<%= rows[i].writer %>";
+          result2 = replaceAll(writer,"&lt;", "<");
+          result2 = replaceAll(result2,"&gt;", ">");
+          result2 = replaceAll(result2,"&#39;", "'");
+          result2 = replaceAll(result2,"&#34;", '"');
+
+        </script>
+        <td><%=rows[i].idx%></script></td>
+        <td><a href="/list/read/<%=rows[i].idx%>"><script>document.write(result);</script></td>
+        <td><script>document.write(result2);</script></td>
+        <td><%=rows[i].hit%></td>
+        <td><%=rows[i].moddate%></td>
+        <td><a href="/list/delete/<%=rows[i].idx%>">삭제</td>
+      </tr>
+      <%
+      }
+      %>
+
+    </table>
+    <br/>
+
+    <div><a href="/list/write"> 글쓰기 </a></div>
+    <br/>
+    <hr/>
+    <br/>
+
+    <!--
+    <form method="post" action="/result" onsubmit="onWriteSubmit()">
+      <input type="text" name="sentence" id="sentence" required/>
+      <input type="submit" value="XSS script test">
+    </form>
+    -->
+
+    <script>
+      var test = "<%= test %>";
+      if (test == ''){
+
+      } else {
+        result = replaceAll(test,"&lt;", "<");
+        result = replaceAll(result,"&gt;", ">");
+        result = replaceAll(result,"&#39;", "'");
+        result = replaceAll(result,"&#34;", '"');
+        document.write(result);
+      }
+
+    </script>
+
+
+
+  </body>
+</html>

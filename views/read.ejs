@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script>
+      function replaceAll(str, searchStr, replaceStr) {
+        return str.split(searchStr).join(replaceStr);
+      }
+    </script>
+  </head>
+  <%
+    var read = rows[0];
+  %>
+  <body>
+    <h1><%= title %></h1>
+    <table border="2">
+      <tr>
+        <th>번호</th>
+        <td><%=read.idx%></td>
+        <th>조회수</th>
+        <td><%=read.hit%></td>
+        <th>글쓴이</th>
+        <td><%=read.writer%></td>
+      </tr>
+      <tr>
+        <th>제목</th>
+        <td colspan="5"><%=read.title%></td>
+      </tr>
+      <tr>
+        <th>작성일</th>
+        <td colspan="2"><%=read.regdate%></td>
+        <th>수정일</th>
+        <td colspan="2"><%=read.moddate%></td>
+      </tr>
+      <tr>
+
+        <script>
+          content = "<%= read.content %>";
+          result2 = replaceAll(content,"&lt;", "<");
+          result2 = replaceAll(result2,"&gt;", ">");
+          result2 = replaceAll(result2,"&#39;", "'");
+          result2 = replaceAll(result2,"&#34;", '"');
+          document.write(result2);
+        </script>
+        <td colspan="6" height="400" ><%= read.content %></td>
+
+      </tr>
+      <tr>
+        <td colspan="6">
+          <a href="/list"> 목록 </a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

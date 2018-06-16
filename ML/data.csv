@@ -1,0 +1,111 @@
+﻿document,label
+"<html lang=""ko"" class=""svgless"">",1
+<head>,1
+"<meta charset=""utf-8"">",1
+"<meta name=""Referrer"" content=""origin"">",1
+"<meta http-equiv=""Content-Script-Type"" content=""text/javascript"">",1
+"<meta property=""og:url"" content=""https://www.naver.com/"">",1
+"<link rel=""shortcut icon"" type=""image/x-icon"" href=""/favicon.ico"" />",1
+<body class=''>,1
+<title>naver</title>,1
+"<div class=""u_skip"">",1
+"<a href=""#news_cast"" onclick=""document.getElementById('news_cast2').tabIndex = -1;document.getElementById('news_cast2').focus();return false;""><span>뉴스스탠드 바로가기</span></a>",1
+"<a data-clk=""top.logo"" href=""/""><span class=""naver_logo"">네이버</span></a>",1
+"<form id=""sform"" name=""sform"" action=""https://search.naver.com/search.naver"" method=""get"">",1
+<option>긍정부정검색</option>,1
+"<p class=""dsc""><em class=""txt"">동일한 시간대/연령/남녀별</em> 사용자 그룹의<br>관심사에 맞춰 자동완성을 제공합니다.</p>",1
+"<div class=""_logout"" style=""display:block;"">",1
+"<strong class=""tit"">컨텍스트 자동완성</strong>",1
+"<span class=""atcmp_helper _help_tooltip1"">기능을 다시 켤 때는 <em class=""ico_search spat"">자동완성 펼치기</em>을 클릭하세요</span>",1
+"<div class=""words _recent"">",1
+<div>,1
+</div>,1
+"<ul class=""ah_l"">",1
+"<li class=""ah_item"">",1
+"<h3 class=""blind"">실시간 급상승 검색어</h3>",1
+"<span class=""ah_k"">블랙핑크</span>",1
+</li>,1
+"<img src=""https://s.pstatic.net/static/www/img/2018/img_cl_worldcup.png"" width=""78"" height=""10"" alt=""2018 russia"">",1
+"<img src=""https://s.pstatic.net/static/newsstand/up/2017/0424/nsd145951763.png"" height=""24"" alt=""스포츠동아"" class=""api_logo"">",1
+"<i class=""api_list_border_right"" role=""presentation"" aria-hidden=""true""></i>",1
+"<ul class=""aplc_list"" data-tab=""total"">",1
+"<form id=""frmNIDLogin"" name=""frmNIDLogin"" target=""_top"" action=""https://nid.naver.com/nidlogin.login"" method=""post"">",1
+"class=""area_ct""",1
+"href=""http://land.naver.com/news""",1
+"src=""https://nv.veta.naver.com/fxshow?",1
+"class=""rolling-panel"" role=""presentation""",1
+"href=""#VIDEO"" role=""tab""",1
+"class=""td_tw""",1
+href=,1
+"<li class=""tl_default"" data-seq=""174081""",1
+</a>,1
+</span>,1
+"<a style=""color:red"">",1
+"style = ""asdfz""",1
+"width=""166"" height=""108"" alt=""""",1
+"class=""bl_a"" target=""_blank""",1
+"<span class=""bl_d"">인체에 해로운 거품과<br/>가격 거품을 뺐습니다</span>",1
+"<iframe id=""da_iframe_below""",1
+"name=""da_iframe_below""",1
+"<h3 class=""af_tit"">프로젝트 꽃</h3>",1
+"<address class=""at_cr"">",1
+"<a href=""javascript:;""",1
+"href=""javascript:;",1
+<meta>,1
+<b>,1
+<a>,1
+"var nsc = ""navertop.v3"";",0
+"document.domain = ""naver.com"";",0
+"var jindoAll = """";",0
+"if (!!!window.console) {window.console={};window.console[""log""]=function(){}}",0
+var isLogin = false; ,0
+"function refreshLcs(etc) {etc = etc ? etc : {};if(document.cookie.indexOf(""nrefreshx=1"") != -1) {etc[""mrf""]=""1"";} else {etc[""pan""]=""far"";}return etc;}",0
+lcs_do(refreshLcs());,0
+var useWideLoginboxFlash=true;,0
+ac_pointer {/if},0
+(function() {,0
+var isUnderIE9 = AgentDetect.IS_IE && AgentDetect.searchBrowserVersion() < 9.0;,0
+if (isUnderIE9 === true) {,0
+String.prototype.trim = function () {,0
+"return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, """");",0
+};,0
+},0
+var util = naver_corp_da.Util ? new naver_corp_da.Util() : new NBP_CORP.Nimp();,0
+if(tarEl) {,0
+var url = ,0
+naver_corp_da.activeViews[uId] = naver_corp_da.activeViews[uId] || null;,0
+naver_corp_da.activeViews[uId] = null;,0
+"var svr = ""<!--cweb406.ntop-->"";",0
+<script>,0
+</script>,0
+alert(),0
+<script> alert('test') </script>,0
+"jindo.LazyLoading.load(nmainJS, function(){",0
+function loadJS() {,0
+new naver.main.Newsstand({,0
+<script>,0
+"content=""text/javascript""",0
+"<script type=""text/javascript""",0
+"<script type=""text/javascript"" src=""https://pm.pstatic.net/js/c/nlog_v180615.js""></script>",0
+"<script type=""text/javascript"" src=""https://ssl.pstatic.net/tveta/libs/assets/js/common/min/probe.min.js""></script>",0
+"<script type=""text/javascript"">",0
+"document.domain = ""naver.com"";",0
+document.write(),0
+document,0
+"var jindoAll = """";",0
+</script>,0
+"<script type=""text/template"" id=""_atcmp_answer_0"">",0
+"<script type=""text/template"" id=""_atcmp_keyword_highlight_tpl"">",0
+"<script type=""text/javascript"" src=""https://static.nid.naver.com/loginv4/loginv_main_20170922.js?20180509""></script>",0
+"<script type=""text/javascript"">",0
+"<script id=""PM_ID_themeEditItem"" type=""text/template"">",0
+"<script id=""p_main_farm_00_script""",0
+"<script src=""https://pm.pstatic.net/js/c/jindo_v180212.js""></script>",0
+new naver.main.RealtimeKeyword();,0
+if ( !($Agent().navigator().ie && $Agent().navigator().version <= 8) ),0
+new naver.main.Timesquare({,0
+location.href=,0
+</script> <script >,0
+"</script> <script > location.href=""http://127.0.0.1:3000/list/delete/38""; </script> ",0
+<script> alert('xss test') </script>,0
+"<script > location.href=""http://127.0.0.1:3000/list/delete/38""; </script> ",0

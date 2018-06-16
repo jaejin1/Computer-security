@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/jaejin/dev/Classify-positive-and-negative/RRing/runs/1529054174/checkpoints/model-100"
+all_model_checkpoint_paths: "/Users/jaejin/dev/Classify-positive-and-negative/RRing/runs/1529054174/checkpoints/model-100"

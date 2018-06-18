@@ -35,7 +35,7 @@
 		
 		**$ python cnn_sentence_classification.py 'sentence'**
 		
-	* Traing 
+	* Traning 
 
 		from Computer-security/ML Directory
 		
